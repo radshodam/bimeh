@@ -1,0 +1,16 @@
+.backdrop {
+    background: url("../images/kafsh.jpg") center;
+    background-size: contain;
+    margin: auto;
+    width: 75vw;
+}
+
+.text {
+    color: white;
+    border: 4px solid;
+    background: rgb(59, 2, 6);
+    mix-blend-mode: multiply;
+    font: bolder 12vw 'Alfa Slab One';
+    text-align: center;
+    margin: 0;
+}

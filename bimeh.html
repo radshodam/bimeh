@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ثبت نام</title>
+    <meta name="author" content="mohahamadZareaiRobat">
+    <link rel="icon" href="images/logoRAD.png">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/RadstyleLazy.css'>
+    <link rel="stylesheet" href="sweetalert2/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="css/hamburgers.css">
+
+</head>
+
+<body>
+    <!-- radloader hanooz gozashte nashode -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle">
+
+                </div>
+                <div class="preloader-img pere-text">
+                    <img src="images/logoRAD.png" alt="logoye man">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="rad-nav ">
+
+        <nav class=" px-1 pt-2 fixed-top ">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <div class="hamburger hamburger--emphatic ">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner">
+
+                    </div>
+                </div>
+            </div>
+
+        </label>
+            <label class="logo">
+            <img src="images/logoRAD.png" alt="">
+        </label>
+            <ul class=" ml-auto">
+                <!-- <ol>
+                    <li class="submenu">
+                        <img src="images/cartTwo.png" id="img-cart">
+                        <div id="shopping-cart">
+
+                            <table id="cart-content" class="table-dark d-lg-block tables">
+                                <thead>
+                                    <tr>
+                                        <th class="p-3 " style="font-size:23px">تصویر</th>
+                                        <th class="p-3 " style="font-size:23px ">نوع کالا</th>
+                                        <th class="p-2 " style="font-size:23px ">قیمت</th>
+                                        <th class="p-2 " style="font-size:23px "></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href=" # " id="clear-cart " class=" btn-lg btn-danger clearAll ">پاک کردن</a>
+                        </div>
+                    </li>
+                </ol> -->
+                <li class="px-2 ">
+                    <a href="#"> <i class="fa fa-home 4x "></i> صفحه اصلی</a>
+                </li>
+                <li class="px-2 "><a class="active" href="bimeh.html"> بیمه</a></li>
+                <li class="px-2 "><a href="# ">ارتباطات</a></li>
+                <li class="px-2 "><a href="# ">درباره ی ما</a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <div class="star ">
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+            <div class="firefly color-block "></div>
+        </div>
+    </div>
+    <!-- start nav va fix top baraye scroll -->
+
+    <!-- start anim square -->
+    <section class="latest-products spad ">
+        <!-- <ul class="circles ">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul> -->
+        <!-- </div> -->
+        <!-- End anim square -->
+
+        <div class="container my-5 bime">
+            <div class="row my-5">
+                <div class="col col-md-8 mr-md-auto ml-md-auto mb-5">
+                    <div id="content" class="mb-4">
+                        <header>
+                            <h1 class="text-center">محاسبه آنلاین قیمت بیمه خودرو</h1>
+                        </header>
+                        <div class="row content-form">
+                            <div class="col col-md-10 mr-md-auto ml-md-auto">
+                                <form action="#" id="request-quote">
+
+                                    <div class="form-group">
+                                        <label class="full-width mb-4" style="color: black;" for="make">مدل خودرو:</label>
+                                        <select class="form-control" id="make">
+                                                  <option value="">- انتخاب -</option>
+                                                  <option value="1">پراید</option>
+                                                  <option value="2">اپتیما</option>
+                                                  <option value="3">پورشه</option>
+                                              </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="full-width  mt-3 mb-4" style="color:black" for="year">سال ساخت:</label>
+                                        <select class="form-control" id="year"></select>
+                                    </div>
+                                    <fieldset class="form-group">
+                                        <div class="row">
+                                            <legend class="col-form-legend full-width col-12 " style="color: black;">نوع بیمه</legend>
+
+                                            <div dir="rtl" class="col-12 full-width">
+                                                <div class="form-check padding-right my-4" style="color: black;">
+                                                    <label class="form-check-label">
+                                                        ساده - شخص ثالث
+                                                      </label>
+                                                    <input class="form-check-input" type="radio" name="level" value="basic" checked>
+                                                </div>
+                                                <div class="form-check padding-right my-4" style="color: black;">
+                                                    <label class="form-check-label">
+                                                        کامل - شخص ثالث با بیمه بدنه
+                                                      </label>
+                                                    <input class="form-check-input" type="radio" name="level" value="complete">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <div id="loading">
+                                        <img src="img/spinner.gif">
+                                    </div>
+                                    <div id="result"></div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-raised btn-primary">محاسبه قیمت
+                                            </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#content-->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- for circle animaion -->
+    <div class="ripple-background">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circle xlarge shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle mediun shade4"></div>
+        <div class="circle small shade5"></div>
+    </div>
+
+    <!--  Footer Start -->
+    <!-- start animatin firefly -->
+    <!-- <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <div class="firefly "></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div> -->
+    <!-- end animatin firefly -->
+
+
+    <footer id="footer ">
+
+
+
+        <div class="footer color-block">
+            <div class="container-fluid p-5 mx-3 ">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4 class="footerEnding--text-head " id="khadamati ">خدمات ما</h4>
+                            <ul>
+                                <li><a href="# ">خدمات جدید</a></li>
+                                <li><a href="# "> خدمات</a></li>
+                                <li><a href="# ">خدمات دهی</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4 class="text-head ">لینک های مفید</h4>
+                            <ul class="exmenu ">
+
+                                <li>
+                                    <a href=" "></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4>تماس با ما</h4>
+                            <p>تلفن : 09366388505</p>
+
+                            <p>پست الکترونیک : mohahamadZareai@gmail</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4>مارا دنبال کنید</h4>
+                        </div>
+                        <div class="iconR ">
+                            <ul>
+                                <li><a href="# "><i class=" fa fa-telegram "></i></a></li>
+                                <li><a href="# "><i class="fa fa-instagram "></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footerEnding ">
+
+                            <form class="signup-frmCustom mt-4 ">
+                                <input type="email " class="form-control sigmup-me " placeholder="انتقاد خود رو بنویسید " required="required ">
+                                <button type="submit " class="btn btn-primary "><i
+                                        class="fa fa fa-arrow-circle-o-left "></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4 ">
+        <div class="footer-bottom ">
+            <div class="container ">
+                <div class="row align-items-center ">
+
+                    <div class="col-lg-12 col-md-12 text-center mb-5 " style="direction: rtl; ">
+                        <p class=" "> طراحی شده توسط <a href="# ">مـ☾حمد زارعی (رد شدم)</a> کلیه حقوق محفوظ است. ©</p>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    </footer>
+
+    <!-- Latest Product End -->
+
+    <!-- one & two & three bootstrapi . . . 4 for scroll  & 5 jaqurey for javascript page -->
+    <script src="js/jquery-3.5.1.slim.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src="js/jquery.matchHeight-min.js "></script>
+    <script src="js/jquery.js "></script>
+    <script src="js/bundle.js "></script>
+    <!-- startloader -->
+    <script src="js/loader.js ">
+    </script>
+
+    <!-- endloader -->
+    <!-- endloader -->
+    <!-- start script hamburger radshodam-->
+    <script>
+        var forEach = function(t, o, r) {
+            if ("[object Object] " === Object.prototype.toString.call(t))
+                for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+            else
+                for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+        };
+
+        var hamburgers = document.querySelectorAll(".hamburger ");
+        if (hamburgers.length > 0) {
+            forEach(hamburgers, function(hamburger) {
+                hamburger.addEventListener("click ", function() {
+                    this.classList.toggle("is-active ");
+                }, false);
+            });
+        }
+    </script>
+    <!-- End hamburger radshodam-->
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+
+            } else {
+                $('nav').removeClass('black');
+
+
+            }
+        })
+    </script>
+    <!-- roie master bezanam roie amade beram ounja kamel daram baraie edameie chizi ke mikham -->
+
+    <!-- start shopping-cart -->
+    <script src="js/radAddSHoping.js"></script>
+    <!-- End shoping cart -->
+    <!-- start Js form -->
+    <script src="js/formJavaScript.js"></script>
+    <!-- end js Form -->
+    <!-- start gsap without for scroll and header and lazy -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/RAdGsapmain.js"></script>
+    <!-- End gsap and continue for oics js bottom -->
+    <!-- start Sweet alert -->
+    <script src="sweetalert2/sweetalert2.all.min.js"></script>
+    <!-- end sweet alert -->
+    <script src="js/bime.js"></script>
+</body>
+
+</html>
