@@ -35,14 +35,31 @@ function Eventlisteners() {
         // va oun radio ii ke ma active karde bashim TEBGH html ma oun checked mishe pas be sorat zir
 
         const radioForm = document.querySelector("input[name ='level']:checked").value
-            // console.log(radioForm);
+
+        // console.log(radioForm);
+
+
+        // agar yeki khali bood error bede
+        // dar inja miam ye k error mikham besazam dar balaie hamin form
+        // ma az class jahani html ke dashtim estefade mikonim v a choon shei gara neveshtim mitavanim benvisim
+        // injoori  html.DisplayError() ya name har function ke made nazaremoone
+
+
+
+        if (modelCar === "" || year === "" || radioForm === "") {
+            //    in meghdar ra bede be HTML("djsdhvdhvd")
+            HTML.displayError("مقادیر را پر کنید")
+
+        } else {
+            console.log("true");
+        }
     })
 
 }
 
 
 
-
+let HTML = new HTMLUI()
 
 //Object
 // for object
@@ -57,7 +74,7 @@ function Eventlisteners() {
 // edame commment ro dar function displayTarikham
 
 function tarikh() {
-    let HTML = new HTMLUI()
+
     HTML.displayTarikham()
 
 }
@@ -124,4 +141,23 @@ HTMLUI.prototype.displayTarikham = function() {
     // ke biad va teye har marhale yek Option besaze chun slect darim
     // hala baiad edame ye ka ro berim marhale 01-2- dar event listeners ha
 
+}
+
+// creat  diplay for if " " bood
+// havaset bashe hatman baiad az = estefade koni chon hNOOZ CLass bis neminevisam
+HTMLUI.prototype.displayError = function(err) {
+    // creat div
+    let creatDiv = document.createElement("div")
+        // dadan class
+    creatDiv.classList = "error"
+        // dadan innerText
+    creatDiv.innerText = err
+
+    // va badesh miaim bezarimesh dar yek jaigahi
+    formAsli.insertBefore(creatDiv, document.querySelector(".form-group"))
+        //  remove ctime for 
+    setTimeout(() => {
+        document.querySelector(".error").remove()
+    }, 3000);
+    console.log(creatDiv);
 }
