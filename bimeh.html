@@ -9,7 +9,9 @@
     <link rel="icon" href="images/logoRAD.png">
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-material-design.min.css'>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/RadstyleLazy.css'>
     <link rel="stylesheet" href="sweetalert2/sweetalert2.min.css">
@@ -150,7 +152,7 @@
                                 <form action="#" id="request-quote">
 
                                     <div class="form-group">
-                                        <label class="full-width mb-4" style="color: black;" for="make">مدل خودرو:</label>
+                                        <label class="full-width" style="color: black;" for="make">مدل خودرو:</label>
                                         <select class="form-control" id="make">
                                                   <option value="">- انتخاب -</option>
                                                   <option value="1">پراید</option>
@@ -159,7 +161,7 @@
                                               </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="full-width  mt-3 mb-4" style="color:black" for="year">سال ساخت:</label>
+                                        <label class="full-width  " style="color:black" for="year">سال ساخت:</label>
                                         <select class="form-control" id="year"></select>
                                     </div>
                                     <fieldset class="form-group">
@@ -202,13 +204,7 @@
 
     </section>
     <!-- for circle animaion -->
-    <div class="ripple-background">
-        <div class="circle xxlarge shade1"></div>
-        <div class="circle xlarge shade2"></div>
-        <div class="circle large shade3"></div>
-        <div class="circle mediun shade4"></div>
-        <div class="circle small shade5"></div>
-    </div>
+
 
     <!--  Footer Start -->
     <!-- start animatin firefly -->
@@ -384,6 +380,13 @@
     <script src="sweetalert2/sweetalert2.all.min.js"></script>
     <!-- end sweet alert -->
     <script src="js/bime.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
 </body>
 
 </html>
